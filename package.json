@@ -1,0 +1,42 @@
+{
+  "name": "mage2-webapi",
+  "version": "1.0.0",
+  "description": "Magento2 webapi utilities",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jakhotiya/mage2-webapi.git"
+  },
+  "keywords": [
+    "magento2",
+    "webapi",
+    "rest",
+    "query",
+    "search",
+    "queries"
+  ],
+  "author": "Abhishek Jakhotiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jakhotiya/mage2-webapi/issues"
+  },
+  "homepage": "https://github.com/Jakhotiya/mage2-webapi#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.0.4",
+    "watch": "^1.0.2"
+  }
+}
